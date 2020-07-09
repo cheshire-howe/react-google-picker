@@ -131,7 +131,6 @@ export default class GoogleChooser extends React.Component {
     const picker = new window.google.picker.PickerBuilder()
                              .addView(view)
                              .setOAuthToken(oauthToken)
-                             .setDeveloperKey(this.props.developerKey)
                              .setCallback(this.props.onChange);
 
     if (this.props.origin) {
